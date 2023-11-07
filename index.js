@@ -57,3 +57,7 @@ function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
+
+lightbox.option({
+  'fadeDuration': 300,
+})

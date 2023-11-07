@@ -329,6 +329,7 @@ color: #b99150;
 .card-pizza-button:hover,
 .button-choose:hover {
 	background: #f5c06d;
+  cursor: pointer;
 }
 
 .popup {
