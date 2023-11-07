@@ -9,51 +9,240 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="./node_modules/wow.js/css/libs/animate.css"
+  />
 </head>
 <body>
-    <div class="main-container">
-
-        <header>
-            <div class = "header-container dark-gr-back">
-                <div class="header-container">
-                <h1 class="name name-text">PIZZA CHEFF</h1>
-                <nav class="navbar">
-                    <ul class = "nav-menu">
-                        <li class="nav-item link1-media"><a href="#pizza" class="link">Пиццы</a></li>
-                        <li class="nav-item"><a href="#pizza" class="link">Напитки</a></li>
-                        <li class="nav-item"><a href="#contacts" class="link">Доставка и оплата</a></li>
-                        <li class="nav-item"><a href="#contacts" class="link">Контакты</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="header-icon-media">
+    <header class="header-shadow">
+        <div class = "header-container container">
+            <div class="header-container">
                 <div class="icon-profile">
-                    <img src="./assets/img/icon_profile.svg" alt="icon">
+                    <img src="./assets/logo.svg" alt="icon">
                 </div>
+            <div class="header-name">
+                <h1 class="header-name-text">PIZZA CHEFF</h1>
+            </div>
+            <nav class="navbar">
+                <ul class = "nav-menu">
+                    <li class="nav-item"><a href="#pizza" class="link font-reg">Пиццы</a></li>
+                    <li class="nav-item"><a href="#pizza" class="link font-reg">Напитки</a></li>
+                    <li class="nav-item"><a href="#contacts" class="link font-reg">Доставка и оплата</a></li>
+                    <li class="nav-item"><a href="#contacts" class="link font-reg">Контакты</a></li>
+                </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <main>
+            <section class="wow slideInRight">
+                <div class="section-one">
+                <div class="section-one-desc">
+                    <h2 class="section-one-header font-brwn font-extra-bold">Самая вкусная пицца в мире <span class="section-span font-orng">только в Pizza Cheff</span></h2>
+                    <div class="section-column">
+                        <div>
+                            <div class="section-row">
+                                <img src="./assets/section1/testo.svg" alt="">
+                                <div class="section-row-desc">
+                                    <h2 class="section-row-header font-extra-bold font-orng">Лучшее тесто</h2>
+                                    <p class="section-row-text font-reg font-brwn">Мы создаем тесто только из отборной итальянской муки наивысшего качества</p>
+                                </div>
+                            </div>
+                            <div  class="section-row">
+                                <img src="./assets/section1/gar.svg" alt="">
+                                <div class="section-row-desc">
+                                    <h2 class="section-row-header font-extra-bold font-orng">гарантия качества</h2>
+                                    <p class="section-row-text font-reg font-brwn">Наша пиццерия получила множество наград и признаний по всему миру</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div  class="section-row">
+                                <img src="./assets/section1/povara.svg" alt="">
+                                <div class="section-row-desc">
+                                    <h2 class="section-row-header font-extra-bold font-orng">лучшие повара</h2>
+                                    <p class="section-row-text font-reg font-brwn">Пиццы готовят самые профессиональные итальянские повара</p>
+                                </div>
+                            </div>
+                            <div  class="section-row">
+                                <img src="./assets/section1/rezept.svg" alt="">
+                                <div class="section-row-desc">
+                                    <h2 class="section-row-header font-extra-bold font-orng">отборные рецепты</h2>
+                                    <p class="section-row-text font-reg font-brwn">Мы используем рецепты от мировых лидеров в изготовлении пиццы</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-one-button">
+                        <button class="button-choose bckgr-orng font-dark font-bold"> Выбрать пиццу</button>
+                    </div>
+                </div>
+                <div class="section-one-photo">
+                    <img src="./assets/section1/pizza.jpg" alt="pizza" class="img-right">
                 </div>
             </div>
-        </header>
-        <section>
-            <div>
+            </section>
+            <section>
+                <div class="section-two">
+                    <div>
+                        <h2 class="section-two-header font-bold font-brwn">Выберите свою любимую пиццу </h2>
+                    </div>
+                    <div class="section-cards">
+                        <div class="section-cards-column">
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza (1).jpg" data-lightbox="pizza-1" data-title="Мясная Делюкс"><img src="./assets/section2/pizza (1).jpg" alt="pizza-1" /></a>
 
-            </div>
-            <div>
-                
-            </div>
-        </section>
-        <section id="about">
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Мясная Делюкс</h3>
+                                    <p class="card-pizza-text font-reg">Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы, соус чили, ананасы</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza  (2).jpg" data-lightbox="pizza-2" data-title="Морская Премиум"><img src="./assets/section2/pizza  (2).jpg" alt="pizza-2" /></a>
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Морская Премиум</h3>
+                                    <p class="card-pizza-text font-reg">Перец, сыр, креветки, кальмары, мидии, лосось</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza  (3).jpg" data-lightbox="pizza-3" data-title="Бекон и Сосиски"><img src="./assets/section2/pizza  (3).jpg" alt="pizza-3" /></a>
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Бекон и Сосиски</h3>
+                                    <p class="card-pizza-text font-reg">Бекон, сыр, сосиски, ананас, томатная паста</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza (4).jpg" data-lightbox="pizza-4" data-title="Куриная Делюкс"><img src="./assets/section2/pizza (4).jpg" alt="pizza-4" /></a>
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Куриная Делюкс</h3>
+                                    <p class="card-pizza-text font-reg">Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-cards-column">
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza  (5).jpg" data-lightbox="pizza-5" data-title="Барбекю Премиум"><img src="./assets/section2/pizza  (5).jpg" alt="pizza-5" /></a>
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Барбекю Премиум</h3>
+                                    <p class="card-pizza-text font-reg">Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус чили</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza (6).jpg" data-lightbox="pizza-6" data-title="Пепперони Дабл"><img src="./assets/section2/pizza (6).jpg" alt="pizza-6" /></a>
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Пепперони Дабл</h3>
+                                    <p class="card-pizza-text font-reg">Пепперони, сыр, колбаса 2 видов: обжаренная и вареная</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza  (7).jpg" data-lightbox="pizza-7" data-title="Куриное трио"><img src="./assets/section2/pizza  (7).jpg" alt="pizza-7" /></a>
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Куриное трио</h3>
+                                    <p class="card-pizza-text font-reg">Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр, грибы, соус для пиццы</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold three-card-m">В корзину</button>
+                                </div>
+                            </div>
+                            <div class="card-pizza">
+                                <div>
+                                    <a href="./assets/section2/pizza  (8).jpg" data-lightbox="pizza-8" data-title="Сырная"><img src="./assets/section2/pizza  (8).jpg" alt="pizza-8" /></a>
+                                </div>
+                                <div>
+                                    <h3 class="card-pizza-header font-dark font-bold">Сырная</h3>
+                                    <p class="card-pizza-text font-reg">Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный</p>
+                                </div>
+                                <div>
+                                    <button class="card-pizza-button bckgr-orng font-dark font-bold">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wow slideInLeft">
+                <div class="section-three">
+                    <div>
+                        <div class="section-three-header">
+                            <h2 class="section-three-header-text font-extra-bold font-orng">Хватит думать! <span class="section-span font-brwn">Доставим заказ за 30 минут!</span></h2>
+                        </div>
+                        <div class="section-three-desc">
+                            <p class="section-three-desc-text font-reg">Мы  гарантированно доставим вашу пиццу за 30 минут с момента оформления заказа. Если мы опоздаем даже на 1 минуту - вы получаете весь заказ бесплатно и ваучер на скидку на следующий заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент был доволен и не остался голодный!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <form id="order-form" class="order-form">
+                            <div >
+                              <input class="order-block" type="text" id="name" name="name" placeholder="Ваше имя" required onkeypress="return event.charCode != 46;" pattern="[а-яА-ЯёЁa-zA-Z]+">
+                            </div>
+                            <div>
+                              <input class="order-block" type="text" id="address" name="address"  placeholder="Адрес доставки" required>
+                            </div>
+                            <div>
+                              <input class="order-block" type="tel" id="phone" name="phone"  placeholder="Телефон" required pattern="[0-9+]+">
+                            </div>
+                            <button class="order-block bckgr-orng font-dark font-bold order-button" type="submit" id="submit-btn">Оформить заказ</button>
+                          </form>
 
-        </section>
-        <section id="favorites">
-
-        </section>
+                          <div id="popup" class="popup">
+                            <div class="popup-content">
+                              <h2>Спасибо за заказ!</h2>
+                              <button id="close-btn">Закрыть</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div >
+                        <img src="./assets/section3-pizza.jpg" alt="" class="img-pizza img-right">
+                    </div>
+                </div>
+            </section>
+        </main>
 
     </div>
+    <script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+    <script src="./node_modules/wow.js/dist/wow.min.js"></script>
     <script src="./index.js"></script>
+
 </body>
 </html>

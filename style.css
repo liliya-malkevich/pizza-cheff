@@ -1,0 +1,483 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  h1{
+    margin: 0;
+  }
+
+  body{
+    font-family: 'Muller Regular';
+    margin: 0;
+  }
+
+  li{
+    list-style-type:none;
+  }
+
+  .container {
+    max-width: calc(100vw - 120px);
+    margin: 0 auto;
+  }
+
+  .header-container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-shadow {
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+.header-name{
+width: 85px;
+margin-left: 7px;
+}
+
+.header-name-text{
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #ffc468;
+    font-weight: 800;
+    font-family: "Muller Black";
+    line-height: 30px;
+}
+
+.navbar {
+    width: 980px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    width: 495px;
+    justify-content: space-between;
+}
+
+.link {
+text-decoration: none;
+letter-spacing: 0px;
+color: #a46b00;
+}
+
+
+.section-one {
+  margin-top: 125px;
+  display: flex;
+}
+
+.section-column {
+  display: flex;
+}
+
+.section-row {
+  margin-top: 40px;
+  display: flex;
+  width: 340px;
+}
+
+.section-one-header{
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.font-extra-bold{
+  font-weight: 800;
+  font-family: "Muller Extra Bold";
+}
+
+.font-reg{
+  font-size: 16px;
+letter-spacing: 0px;
+font-family: "Muller Regular";
+}
+
+.font-bold{
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: bold;
+  font-family: "Muller Bold";
+}
+
+.font-orng{
+  color: #ffaf18;
+}
+
+.bckgr-orng{
+  background-color: #ffaf18;
+}
+
+.font-brwn{
+  color: #b99150;
+}
+
+.section-span{
+  display: block;
+}
+
+.section-row-header{
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.section-row-text{
+  line-height: 16px;
+}
+
+.section-row-desc {
+  margin-left: 10px;
+  width: 230px;
+}
+
+.button-choose{
+  width: 224px;
+  height: 60px;
+  border: none;
+}
+
+.font-dark{
+color: #382400;
+}
+
+.section-one-button{
+  margin-top: 60px;
+}
+
+.section-one-photo{
+  margin-top: 50px;
+}
+
+.section-two-header{
+  font-size: 35px;
+  text-align: center;
+}
+
+.section-two {
+  margin-top: 150px;
+}
+
+.card-pizza{
+  width: 282px;
+  height: 354px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 7.5px rgba(152,152,152,0.2);
+}
+
+.card-pizza-header{
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.card-pizza-text{
+  width: 242px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #181a1a;
+  text-align: center;
+}
+
+.card-pizza-button{
+  width: 242px;
+  height: 50px;
+  border: none;
+  margin-top: 25px;
+}
+
+.section-cards {
+  margin-top: 50px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.three-card-m{
+  margin-top: 10px;
+}
+
+.section-cards-column{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-three-header-text{
+  width: 409px;
+font-size: 35px;
+line-height: 45px;
+}
+
+.section-three {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-three-desc-text{
+  width: 384px;
+font-size: 16px;
+line-height: 24px;
+color: #b99150;
+}
+
+.section-three-desc{
+  margin-top: 62px;
+}
+
+.order-block{
+  width: 330px;
+  height: 60px;
+  margin-top:25px ;
+  border: 1px solid #b99150;
+}
+
+.order-block::placeholder{
+  font-size: 18px;
+  line-height: 45px;
+  color: #cba86e;
+  font-family: "Muller Regular";
+  vertical-align: middle;
+  padding: 5px 30px;
+}
+
+.order-form {
+  height: 320px;
+}
+
+.img-pizza{
+  /* background-image: url(./assets/section3-pizza.jpg);
+  width: 390px;
+  height: 415px; */
+  margin-right: -140px;
+}
+
+.img-right {
+  max-width: 100%;
+    height: auto;
+    min-width: 180px;
+}
+
+#error-message {
+  color: rgb(255, 162, 0);
+  margin-bottom: 10px;
+}
+
+.order-button,.card-pizza-button,.button-choose {
+  border: none;
+  transition: 0.3s linear;
+}
+
+.order-button:hover,
+.card-pizza-button:hover,
+.button-choose:hover {
+	background: #f5c06d;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+#close-btn {
+  margin-top: 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #a18157;
+}
+
+
+@media(max-width: 1150px){
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+.header-container{
+  width: 100vw;
+}
+}
+
+
+@media(max-width: 1000px){
+  .section-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one {
+align-items: center;
+}
+
+
+.section-three {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+}
+
+@media(max-width: 768px){
+
+  .header-container{
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+@media(max-width: 578px){
+.img-right{
+  display: none;
+}
+}
+
+  @font-face {
+    font-family: "Muller Regular";
+    src: url("./fonts/MullerRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+     }
+
+    @font-face {
+    font-family: "Muller Extra Bold";
+    src: url("./fonts/MullerExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+    }
+
+    @font-face {
+        font-family: "Muller Black";
+        src: url("./fonts/MullerBlack.ttf") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+        }
+
+        @font-face {
+          font-family: "Muller Bold";
+          src: url("./fonts/MullerBold.ttf") format("truetype");
+          font-style: normal;
+          font-weight: normal;
+          }
